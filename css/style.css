@@ -421,7 +421,7 @@ ul.lang{
 ul.tools li, ul.hobbies li{
     list-style: none;
     display: inline-block;
-    background: url(../img/sprite.png) no-repeat;
+    background: url(./../img/sprite.png) no-repeat;
     background-size: 500px;
     margin-left: 17px;
 }
