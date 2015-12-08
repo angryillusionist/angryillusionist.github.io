@@ -1,0 +1,597 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+
+
+    <!-- /////////// Website Credits ///////////
+
+      http://tympanus.net - For slider ( You guys are awesome. )
+      http://codyhouse.co - For the Animated text.
+      http://thenounproject.com - For amazing icons.
+      http://animate.css - For CSS Animations.
+      http://foundation.zurb.com - Framework.
+
+      Thanks to @liveashish and @sid.9111 for helping me out. :)
+
+    ////////////////////////////////////////// -->
+
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Hello! I am Soumya, a 23 year old UI/UX Designer, living in Bangalore, India. I have an eye for detail and a passion for what I do. Currently working with awesome guys at Cleartrip.">
+    <meta name="keywords" content="UI/UX Designer, Web Designer">
+    <meta name="author" content="Soumya Ranjan Bishi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <link href="img/favicon/32X32.ico" type="image/x-icon" rel="shortcut icon" />
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <meta property="og:title" content="Soumya Ranjan Bishi | UI/UX Designer"/>
+    <meta property="og:url" content="http://soumyabishi.co"/>
+    <meta property="og:image" content="http://soumyabishi.co/img/og_logo.jpg"/>
+    <meta property="og:site_name" content="Soumya Ranjan Bishi | UI/UX Designer"/>
+    <meta property="og:description" content="Hello! I am Soumya, a 23 year old UI/UX Designer, living in Bangalore, India. I have an eye for detail and a passion for what I do. Currently working with awesome guys at Cleartrip."/>
+
+
+    <title>Soumya Ranjan Bishi | UI/UX Designer</title>
+    <link href="img/favicon.ico" type="image/x-icon" rel="shortcut icon" />
+    <link rel="stylesheet" href="css/foundation.css" />
+    <script src="js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/font.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/icon.css" />
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+
+
+    <script type="text/javascript">
+        jQuery(document).ready(function($) {
+            $(window).load(function(){
+                $('#preload_wrapper').fadeOut('slow',function(){$(this).remove();});
+            });
+
+        });
+    </script>
+
+
+    <script>
+        var didScroll;
+        var lastScrollTop = 0;
+        var delta = 2;
+        var navbarHeight = $('header').outerHeight();
+
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
+
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+
+
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+
+            if (st > lastScrollTop && st > navbarHeight){
+
+                $('header').removeClass('nav-down').addClass('nav-up');
+            } else {
+
+                if(st + $(window).height() < $(document).height()) {
+                    $('header').removeClass('nav-up').addClass('nav-down');
+                }
+            }
+
+            lastScrollTop = st;
+        }
+    </script>
+
+
+    <script type="text/javascript">
+
+        jQuery(window).scroll(function () {
+            if (jQuery(this).scrollTop() == 0) {
+                $('header').addClass('reachedTop');
+
+            } else {
+                $('header').removeClass('reachedTop');
+            }
+        });
+
+
+
+    </script>
+
+
+
+    <script type="text/javascript">
+
+
+        jQuery(document).ready(function($) {
+
+            $("#guy").hover(
+                    function () {
+                        $('#hi').addClass('animated jello');
+                    },
+                    function () {
+                        $('#hi').removeClass('animated jello');
+                    }
+            );
+
+
+
+            $(".logo").hover(
+                    function () {
+                        $('.logo span').addClass('animated bounce');
+                    },
+                    function () {
+                        $('.logo span').removeClass('animated bounce');
+                    }
+            );
+
+
+
+
+
+        });
+
+
+
+    </script>
+
+
+</head>
+<body>
+
+
+
+
+
+
+<div id="preload_wrapper">
+    <div class="preloader animated zoomIn" id="preloader"></div>
+</div>
+
+
+<div class="opl"><a href="https://onepagelove.com/soumya-ranjan-bishi-2015" target="_blank"></a></div>
+<div class="cssda"><a href="http://www.cssdesignawards.com/sites/soumya-ranjan-bishi-portfolio/26779" target="_blank"></a></div>
+
+<header class="nav-down reachedTop">
+    <div class="wrapper" id="wrapper">
+        <div class="row" >
+
+
+            <div class="small-2  columns">
+
+                <a href="#intro" class="logo">Abdul Samad<span>.</span></a>
+            </div>
+
+
+            <div class="small-10  columns">
+
+                <ul class="menu">
+                    <li> <a href="#me">me</a></li>
+                    <li> <a href="#projects">projects</a></li>
+                    <li><a href="#hello">say hello</a></li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+    </div>
+
+</header>
+
+
+<!-- ///////////////////////////// Start Intro Section ///////////////////////////// -->
+
+<section class="intro" id="intro">
+    <div class="row" id="middle_row">
+        <div class="medium-6  columns" style="text-align:center;position:relative;">
+
+            <img src="./img/guy.png" id="guy" class="guy" alt="guy"/>
+            <img src="img/hi.png" id="hi" class="animated jello" alt="hi"/>
+
+
+
+
+        </div>
+
+        <div class="medium-6 columns">
+
+
+
+            <section class="cd-intro">
+                <h1 class="cd-headline clip is-full-width">
+                    <span class="design">I design</span><br>
+                            <span class="cd-words-wrapper">
+                              <b class="is-visible">cool websites<span class="dot">.</span></b>
+                              <b>mobile apps<span class="dot">.</span></b>
+                               <b>branding stuff<span class="dot">.</span></b>
+                             
+                            </span>
+                </h1>
+            </section>
+
+            <a href="#me" class="btn"> Know more</a>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ///////////////////////////// End Intro Section ///////////////////////////// -->
+
+
+
+
+<!-- ///////////////////////////// Start About Section ///////////////////////////// -->
+
+<section class="about" id="me" >
+
+
+
+    <div class="row">
+
+        <div class="large-12">
+            <h1>About me.</h1>
+            <p>Hi again! I am Shsihir, a 29 year old UI/UX Designer, living in
+                <a href="https://en.wikipedia.org/wiki/Dhaka" target="_blank">Dhaka</a>, Bangladesh.
+                I have an eye for detail and a passion for what I do. Currently working with awesome guys at <a
+                        href="https://planbox.com/" target="_blank">PlanBox</a>. You can find my resume <a
+                        href="abdul_samad_01671336540.pdf" target="_blank">here</a>.</p>
+        </div>
+    </div>
+
+
+
+    <div class="row" style="margin-top: 20px;">
+
+        <div class="medium-3 columns">
+            <h2> Tools I use</h2>
+        </div>
+
+
+        <div class="medium-9  columns">
+            <ul class="tools">
+
+
+
+                <li class="ps" ></li>
+                <li class="ai"></li>
+                <li class="ae" ></li>
+                <li class="sketch"></li>
+
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <div class="row" style="margin-top: 20px;">
+
+        <div class="medium-3 columns">
+            <h2> Web Languages</h2>
+        </div>
+
+
+        <div class="medium-9  columns">
+            <ul class="lang">
+
+                <li>html</li>
+                <li>css</li>
+                <li>javascript</li>
+
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+
+    <div class="row" style="margin-top: 25px;margin-bottom: 77px;">
+
+        <div class="medium-3 columns">
+            <h2>During free time</h2>
+        </div>
+
+
+        <div class="medium-9  columns">
+            <ul class="hobbies">
+
+                <li class="music"></li>
+                <li class="camera"></li>
+
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+
+</section>
+
+
+
+
+<!-- ///////////////////////////// End About Section ///////////////////////////// -->
+
+
+
+
+
+
+<!-- ///////////////////////////// Start Projects Section ///////////////////////////// -->
+
+
+
+<section class="projects" id="projects">
+
+    <div class="row">
+
+        <h1>Projects.</h1>
+        <p>No projects too small</p>
+
+
+
+        <div id="cbp-fwslider" class="cbp-fwslider">
+            <ul>
+                <li>
+
+                    <a href="#" class="prjct_img"><img src="img/projects/1.jpg" style="width:50%;" alt="Noshky"/></a>
+
+                    <h2 class="name">Noshky</h2>
+                    <p class="desc"> Declicious home cooked food delivered <br>right to your door step.</p>
+                    <a class="btn project" target="_blank" href="http://drbl.in/osRq">DRIBBLE SHOT</a>
+
+
+                </li>
+
+
+                <li>
+
+                    <a href="#" class="prjct_img"><img src="img/projects/2.jpg" style="width:70%;" alt="Pilot App"/></a>
+                    <h2 class="name">Pilot APP</h2>
+                    <p class="desc">Pilot App helps you to navigate <br>around any Airport.</p>
+                    <a class="btn project" target="_blank" href="http://drbl.in/nKES">DRIBBLE SHOT</a>
+
+                </li>
+
+
+                <li>
+                    <a href="#" class="prjct_img"><img src="img/projects/3.jpg" style="width:70%;" alt="Stockroom"/></a>
+                    <h2 class="name">Stockroom.io</h2>
+                    <p class="desc"> It helps developers to create their portfolio <br>with just a click.</p>
+                    <a class="btn project" target="_blank" href="http://stockroom.io">Visit website</a>
+
+                </li>
+
+
+
+
+
+                <li>
+                    <a href="#" class="prjct_img"><img src="img/projects/5.jpg" style="width:70%;" alt="Dribbble App"/></a>
+                    <h2 class="name">Dribbble App</h2>
+                    <p class="desc">Material Design concept for Android.</p>
+                    <a class="btn project" target="_blank" href="http://drbl.in/mTdw">DRIBBLE SHOT</a>
+
+                </li>
+
+
+                <li>
+                    <a href="#" class="prjct_img"><img src="img/projects/4.jpg" style="width:70%;" alt="Personal Website"/></a>
+                    <h2 class="name">Personal Website</h2>
+                    <p class="desc">This was my first portfolio website, <br>designed almost a year ago.</p>
+                    <a class="btn project" target="_blank" href="http://drbl.in/lCyr">DRIBBLE SHOT</a>
+
+                </li>
+
+
+                <li>
+                    <a href="#" class="prjct_img"><img src="img/projects/6.jpg" style="width:70%;" alt="Dribbble Profile"/></a>
+
+                    <a class="btn project" target="_blank" href="http://dribbble.com/soumyabishi">Visit now</a>
+
+                </li>
+
+
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+</section>
+
+
+<!-- ///////////////////////////// End Projects Section ///////////////////////////// -->
+
+
+
+
+<!-- ///////////////////////////// Start Footer Section ///////////////////////////// -->
+
+
+<section class="sayhello" id="hello">
+
+    <div class="row">
+
+        <div class="large-6 columns" style="margin-left: 0;padding-left: 0;">
+            <h1>Say hello.</h1>
+            <p>I am available for freelancing. <br>Feel free to contact me.</p>
+        </div>
+
+
+        <div class="large-6  columns">
+            <a href="mailto:hello@soumyabishi.co" class="email">hello@soumyabishi.co</a>
+
+            <div style="clear:both"></div>
+
+            <ul class="icons">
+                <li> <a href="http://dribbble.com/soumyabishi" target="_blank" class="icon dribbble"><span class="icon-dribbble"></span></a></li>
+
+                <li> <a href="http://behance.net/soumyabishi" target="_blank" class="icon behance"><span class="icon-behance"></span></a></li>
+
+
+
+
+
+                <li> <a href="http://facebook.com/soumyabishi" target="_blank" class="icon facebook"><span class="icon-facebook"></span></a></li>
+
+                <li> <a href="http://twitter.com/soumya_bishi" target="_blank" class="icon twitter"><span class="icon-twitter"></span></a></li>
+
+
+
+            </ul>
+
+            <div style="clear:both"></div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
+<!-- ///////////////////////////// End Footer Section ///////////////////////////// -->
+
+
+
+
+<script src="js/jquery.cbpFWSlider.min.js"></script>
+<script>
+    $( function() {
+
+        $( '#cbp-fwslider' ).cbpFWSlider();
+
+    } );
+</script>
+
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+<script type="text/javascript">
+
+    $(function() {
+        $('header a').bind('click',function(event){
+            var $anchor = $(this);
+
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500,'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
+
+    $(function() {
+        $('#intro a').bind('click',function(event){
+            var $anchor = $(this);
+
+            $('html, body').stop().animate({
+                scrollTop: $($anchor.attr('href')).offset().top
+            }, 1500,'easeInOutExpo');
+            event.preventDefault();
+        });
+    });
+
+</script>
+
+
+
+
+<script src="js/foundation.min.js"></script>
+<script>
+    $(document).foundation();
+</script>
+
+<script src="js/textRotate.js"></script>
+
+
+
+<!-- //////// Google Analytics ////////// -->
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-48769844-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
