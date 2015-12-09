@@ -632,13 +632,19 @@ section.sayhello .icon.facebook{
   transition: all .35s ease;
 }
 
-section.sayhello .icon.blog {
+section.sayhello .icon.blog, section.sayhello .icon.git,section.sayhello .icon.gplus {
     color: #848484;
     font-size: 30px;
 }
 
-section.sayhello .icon.blog:hover {
+section.sayhello .icon.git:hover {
     color: orange;
+}
+section.sayhello .icon.blog:hover {
+    color: #f2f2f2;
+}
+section.sayhello .icon.gplus:hover {
+    color: #9e0c0f;
 }
 
 section.sayhello .icon.behance {
