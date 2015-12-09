@@ -638,7 +638,7 @@ section.sayhello .icon.blog {
 }
 
 section.sayhello .icon.blog:hover {
-    color: #F66699;
+    color: orange;
 }
 
 section.sayhello .icon.behance {
