@@ -632,12 +632,12 @@ section.sayhello .icon.facebook{
   transition: all .35s ease;
 }
 
-section.sayhello .icon.dribbble {
+section.sayhello .icon.blog {
     color: #848484;
     font-size: 30px;
 }
 
-section.sayhello .icon.dribbble:hover {
+section.sayhello .icon.blog:hover {
     color: #F66699;
 }
 
