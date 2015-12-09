@@ -637,10 +637,10 @@ section.sayhello .icon.blog, section.sayhello .icon.git,section.sayhello .icon.g
     font-size: 30px;
 }
 
-section.sayhello .icon.git:hover {
+section.sayhello .icon.blog:hover {
     color: orange;
 }
-section.sayhello .icon.blog:hover {
+section.sayhello .icon.git:hover {
     color: #f2f2f2;
 }
 section.sayhello .icon.gplus:hover {
