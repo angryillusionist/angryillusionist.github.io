@@ -1,3 +1,7 @@
 User-Agent: Googlebot
 Disallow:
-sitemap: http://angryillusionist.github.io/sitemap.xml
+XML Sitemap: http://angryillusionist.github.io/sitemap.xml
+ROR Sitemap: http://angryillusionist.github.io/ror.xml
+HTML sitemap: http://angryillusionist.github.io/sitemap.html
+GZ sitemap: http://angryillusionist.github.io/sitemap.gz
+url list: http://angryillusionist.github.io/urllist.txt
