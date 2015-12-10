@@ -1,2 +1,3 @@
-User-Agent: W3C-checklink
+User-Agent: Googlebot
 Disallow:
+sitemap: http://angryillusionist.github.io/sitemap.xml
